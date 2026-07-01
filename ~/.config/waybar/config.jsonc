@@ -28,7 +28,7 @@
     "clock": {
         "format": "{:%a %d %b  %H:%M}",
         "tooltip": false,
-        "on-click": "nautilus"
+        "on-click": "kitty -e btop"
     },
     "network": {
         "format-wifi": "󰖩",
