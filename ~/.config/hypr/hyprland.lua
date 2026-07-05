@@ -1,5 +1,6 @@
 ----MONITORES
 hl.monitor({
+    disabled = false,
     output = "VGA-1",
     mode = "1366x768@60",
     scale = 1,
@@ -51,6 +52,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("dunst")
     hl.exec_cmd("wal -R &")
     hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("flatpak run org.jellyfin.JellyfinServer")
 end)
 ----VISUALES
 local function clean_wal_color(color)
