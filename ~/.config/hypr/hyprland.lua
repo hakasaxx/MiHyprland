@@ -55,7 +55,7 @@ end)
 ----VISUALES
 local function clean_wal_color(color)
     if not color then
-        return "rgba(9932CCee)"
+        return "rgba(e52b50)"
     end
     local cleaned = color:gsub("rgba%(%#", "rgba(")
     return cleaned
