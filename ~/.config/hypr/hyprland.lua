@@ -7,17 +7,18 @@ hl.monitor({
     position = "0x0"
 })
 hl.monitor({
-    disabled = true,
+    disabled = false,
     output = "LVDS-1",
     mode = "1366x768@60",
     scale = 1,
-    position = "0x-768"
+    position = "0x0",
+    mirror = "VGA-1"
 })
 ----APPS
 local archivos = "kitty -e yazi"
 local terminal = "kitty"
 local menu = "fuzzel"
-local web = "flatpak run app.zen_browser.zen"
+local web = "zen-browser"
 local captura = "hyprshot -m region"
 local wallpicker = "kitty -e /usr/bin/python /home/hakasax/GITHUB/MiHyprland/MiHyprland/wallpicker.py"
 ----BINDS
@@ -103,6 +104,11 @@ hl.config({
         enabled = true,
     },
 })
+hl.config({
+    misc = {
+        font_family = "NotoSans Nerd Font Propo"
+    }
+})
 ----TECLADO
 hl.config({
     input = {
@@ -174,4 +180,9 @@ hl.window_rule({
         class = "^code$",
     },
     opacity = "0.7 override 0.7 override 0.7 override",
+})
+hl.config({
+    misc = {
+        font_family = "NotoSans Nerd Font Propo"
+    }
 })

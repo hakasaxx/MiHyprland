@@ -28,7 +28,7 @@
     "clock": {
         "format": "{:%a %d %b  %H:%M}",
         "tooltip": false,
-        "on-click": "kitty -e btop"
+        "on-click": "kitty -e  sudo btop"
     },
     "network": {
         "format-wifi": "󰖩",
