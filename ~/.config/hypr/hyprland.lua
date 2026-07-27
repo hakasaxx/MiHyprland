@@ -1,6 +1,6 @@
 ----MONITORES
 hl.monitor({
-    disabled = false,
+    disabled = true,
     output = "VGA-1",
     mode = "1366x768@60",
     scale = 1,
