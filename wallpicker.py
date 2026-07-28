@@ -38,5 +38,10 @@ def main():
         print(f"Error al ejecutar awww: {e}")
     except FileNotFoundError:
         print("ERROR NO SE ENCONTRO AWWW INSTALALO CON: sudo pacman -S awww")
+        subprocess.run(["sudo", "pacman", "-S", "awww"])
+        subprocess.run(["awww", "img", wallpaper_path], check=True)
+        subprocess.run(["wal", "-i", wallpaper_path], check=True)
+        subprocess.run(["hyprctl", "reload"], check=True)
+        print(f"\nWallpaper cambiado a: {wallpapers[indice]}")
 if __name__=="__main__":
     main()
